@@ -1,9 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import StoreLocator from "../StoreLocator";
+import {shallow} from 'enzyme';
+import StoreLocator from "./../StoreLocator";
 
+ 
+// Initially just a smoke test to check whether the StoreLocation Component (internally it is a function only) exists
 it("renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(<StoreLocator />, div);
-  ReactDOM.unmountComponentAtNode(div);
+ const div = document.createElement("div");
+ ReactDOM.render(<StoreLocator />, div);
 });

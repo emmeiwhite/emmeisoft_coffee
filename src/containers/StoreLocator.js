@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 
-export default class StoreLocator extends Component {
+// This is the most basic Component that we want react to pass
+class StoreLocator extends Component {
   render() {
-    return (
-      <div>
-        
-      </div>
-    )
+    return ("");
   }
 }
+
+export default StoreLocator;
