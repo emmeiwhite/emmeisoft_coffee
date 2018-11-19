@@ -2,6 +2,9 @@
 function mapChooser(locationName){
     // return "sanatnagar.jpg";
     // Let's make our functionality more generic Now
+    if(!locationName){
+        
+    }
     let imageName = `${locationName}.jpg`;
     return imageName;
 }
