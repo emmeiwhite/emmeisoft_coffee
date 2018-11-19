@@ -14,4 +14,25 @@ describe("mapChooser",()=>{
         expect(actual).toEqual(expected);
     })
   
+    it("For rajbag name, return rajbag.jpg",()=>{
+        let expected = "rajbag.jpg";
+
+        let actual = mapChooser("rajbag");
+    
+        // assert
+    
+        expect(actual).toEqual(expected);
+    })
+
+    it("For default name, return default.jpg",()=>{
+        let expected = "default.jpg";
+
+        let actual = mapChooser("default");
+    
+        // assert
+    
+        expect(actual).toEqual(expected);
+    })
+
+
 })
