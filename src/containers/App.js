@@ -5,9 +5,12 @@ import StoreLocator from './StoreLocator';
 class App extends Component {
   render() {
     return (
-     
-         <StoreLocator/>
-    
+      <div>
+        <StoreLocator/>
+        <StoreLocator/> 
+        <StoreLocator/>
+      </div>
+         
     );
   }
 }

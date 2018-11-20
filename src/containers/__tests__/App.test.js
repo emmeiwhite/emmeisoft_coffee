@@ -12,11 +12,12 @@ describe("App",()=>{
   // Test to check whether App renders a StoreLocator :
 
   it('renders a StoreLocator',()=>{
-    let mountedApp = shallow(<App/>);
+   let mountedApp =   shallow(<App/>);
+   const locators = mountedApp.find('StoreLocator');
 
-    let locators = mountedApp.find('StoreLocator');
-    // assert
-    expect(locators.length).toBe(1);
+   //  assert
+
+   expect(locators.length).toBe(3)
   })
 })
 
