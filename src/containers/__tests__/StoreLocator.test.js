@@ -28,5 +28,11 @@ describe("StoreLocator",function(){
         expect(buttons.length).toBe(2);
     })
 
+    it('renders a map',function(){
+        const map = mountedStoreLocator.find('Map');
+        // assert
+        expect(map.length).toBe(1);
+    })
+
 })
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './../components/Header';
 import Button from './../components/Button';
+import Map from './../components/Map';
 
 // This is the most basic Component that we want react to pass
 class StoreLocator extends React.Component {
@@ -10,8 +11,8 @@ class StoreLocator extends React.Component {
            <Header/>
            <Button/>
            <Button/>
+           <Map/>
       </div>
-     
     );
   }
 }

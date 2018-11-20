@@ -7,8 +7,6 @@ class App extends Component {
     return (
       <div>
         <StoreLocator/>
-        <StoreLocator/> 
-        <StoreLocator/>
       </div>
          
     );

@@ -17,7 +17,7 @@ describe("App",()=>{
 
    //  assert
 
-   expect(locators.length).toBe(3)
+   expect(locators.length).toBe(1)
   })
 })
 
