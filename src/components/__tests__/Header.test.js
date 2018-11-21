@@ -1,9 +1,25 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { shallow } from "enzyme";
 import Header from "../Header.js";
 
-it("renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(<Header />, div);
-  ReactDOM.unmountComponentAtNode(div);
+// Today we'll test actual content like images etc within particular Components
+describe("Header", () => {
+  // common Header shallowed
+
+  let mountedHeader;
+
+  beforeEach(() => {
+    mountedHeader = shallow(<Header />);
+  });
+
+  it("renders without crashing", () => {
+    shallow(<Header />);
+  });
+
+  it("renders a logo ", () => {
+    const logoImg = mountedHeader.find('img src["images/venue.jpg"]');
+
+    // assert
+    expect(logoImg.length).toBe(1);
+  });
 });

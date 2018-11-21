@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 
-export default class Header extends Component {
+class Header extends Component {
   render() {
     return (
       <div>
-        <h1>This is the Header</h1>
+        <img src="images/venue.jpg" alt="venue logo" />
       </div>
     );
   }
 }
+
+export default Header;
